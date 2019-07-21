@@ -112,6 +112,13 @@ const game = () => {
     }
   };
 
+  const resetBtn = document.querySelector('.score button');
+  resetBtn.addEventListener('click', function() {
+    pScore = 0;
+    cScore = 0;
+    updateScore();
+  });
+
   //Call all the inner functions
   startGame();
   playMatch();
